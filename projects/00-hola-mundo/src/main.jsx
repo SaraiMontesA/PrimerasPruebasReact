@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 // Mi primer elemento de React
-const createButton = ({text}) => {
+const Button = ({text}) => {
   return(
     <button>
       {text}
@@ -15,8 +15,9 @@ const createButton = ({text}) => {
 // Lo que se renderiza en pantalla
 root.render(
   <React.Fragment>
-    {createButton({text: 'Boton 1'})}
-    {createButton({text: 'Boton 2'})}
-    {createButton({text: 'Boton 3'})}
+    <Button text="Boton 1" />
+    <Button text="Boton 2" />
+    <Button text="Boton 3" />
+    <Button text="Boton 4" />
   </React.Fragment>
 )

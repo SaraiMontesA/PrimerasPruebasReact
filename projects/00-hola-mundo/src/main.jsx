@@ -1,5 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
+// Importamos los estilos
+import './assets/index.css'
+
+// Importamos los componentes
 import {Button} from './assets/Button'
 import {TwitterCard} from './assets/TwitterCard'
 

@@ -6,6 +6,7 @@ export function TwitterCard ({name, username}) {
 	return(
 	<article>
 		<header>
+			<img src="https://unavatar.io/midudev" alt="Avatar" />
 			<h1>{name}</h1>
 			<h2>{username}</h2>
 		</header>

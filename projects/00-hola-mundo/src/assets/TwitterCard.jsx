@@ -7,7 +7,7 @@ export function TwitterCard ({name, username}) {
 	<article className='TwitterCard'>
 		<header className='TwitterCard-header'>
 			<img className='TwitterCard-avatar' src="https://unavatar.io/midudev" alt="Avatar" />
-			<div className='TwitterCard-datos'>
+			<div className='TwitterCard-info'>
 				<strong className='TwitterCard-name'>{name}</strong>
 				<span className='TwitterCard-username'>{username}</span>
 			</div>

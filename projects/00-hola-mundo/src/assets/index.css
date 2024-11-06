@@ -1,37 +1,42 @@
 body {
+	margin: 0;
 	background: #222;
 	font-family: system-ui;
 	display: grid;
+	place-content: center;
+	min-height: 100vh;
 }
 
 .TwitterCard {
-	display: inline;
+	display: flex;
+	align: center;
 }
 
 .TwitterCard-avatar {
 	display: inline-block;
 	min-width: 40px;
 	max-width: 50px;
-	border-radius: 30%;
+	border-radius: 50%;
 }
 
-.TwitterCard-datos {
+.TwitterCard-info {
 	display: inline-block;
-	/* background: #bbf; */
+	margin-left: 10px;
 }
 
 .TwitterCard-name {
 	display: flex;
-	color: aqua;
+	color: rgb(255, 255, 255);
 	margin-top: 0px;
 }
 
 .TwitterCard-username {
 	display: flex;
-	color: #bfb;
+	color: rgb(255, 255, 255);
 	margin-bottom: 0px;
 }
 
 .TwitterCard-button {
 	display: inline-block;
+	border-radius: 20px;
 }

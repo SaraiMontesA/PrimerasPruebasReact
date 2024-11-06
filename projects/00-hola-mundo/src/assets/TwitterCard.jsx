@@ -2,14 +2,19 @@
 import PropTypes from 'prop-types';
 
 // Twitter card
-export function TwitterCard ({name, username}) {
+export function TwitterCard ({name, userName, isFollowing}) { 
+	const imageSrc = `https://unavatar.io/${userName}`
 	return(
 	<article className='TwitterCard'>
 		<header className='TwitterCard-header'>
-			<img className='TwitterCard-avatar' src="https://unavatar.io/midudev" alt="Avatar" />
+			<img
+				className='TwitterCard-avatar'
+				alt="Avatar"
+				src={imageSrc}
+			/>
 			<div className='TwitterCard-info'>
 				<strong className='TwitterCard-name'>{name}</strong>
-				<span className='TwitterCard-username'>{username}</span>
+				<span className='TwitterCard-username'>{userName}</span>
 			</div>
 		</header>
 

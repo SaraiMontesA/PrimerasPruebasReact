@@ -9,18 +9,27 @@ body {
 
 .TwitterCard {
 	display: flex;
-	align: center;
+	align-items: center;
+	color: #fff;
+	font-size: .8rem;
+}
+
+.TwitterCard-header {
+	display: flex;
+	align-items: center;
+	gap: 4px;
 }
 
 .TwitterCard-avatar {
-	display: inline-block;
-	min-width: 40px;
-	max-width: 50px;
-	border-radius: 50%;
+	/* display: inline-block; */
+	width: 48px;
+	width: 48px;
+	border-radius: 1000px;
 }
 
 .TwitterCard-info {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	margin-left: 10px;
 }
 
@@ -31,12 +40,17 @@ body {
 }
 
 .TwitterCard-username {
-	display: flex;
+	/* display: flex;
 	color: rgb(255, 255, 255);
-	margin-bottom: 0px;
+	margin-bottom: 0px; */
+	opacity: .6;
 }
 
 .TwitterCard-button {
-	display: inline-block;
-	border-radius: 20px;
+	margin-left: 16px;
+	border: 0;
+	border-radius: 999px;
+	/* place-content: center; */
+	padding: 6px 16px;;
+	font-weight: bold;
 }

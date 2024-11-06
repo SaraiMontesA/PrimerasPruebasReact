@@ -13,9 +13,26 @@ export function App () {
 	return(
 		<React.Fragment>
 			<section className='App'>
-				<TwitterCard formatUserName={formatUserName} isFollowing={false} name="Miguel Ángel Durán" userName="midudev" />
-				<TwitterCard formatUserName={formatUserName} isFollowing={false} name="Pablo Hernandez" userName="pheralb" />
-				<TwitterCard formatUserName={formatUserName} isFollowing={true} name="Elon Musk" userName="elonmusk" />
+				<TwitterCard
+					formatUserName={formatUserName}
+					isFollowing={false}
+					name="Miguel Ángel Durán"
+					userName="midudev"
+				/>
+
+				<TwitterCard
+				formatUserName={formatUserName}
+				isFollowing={false}
+				name="Pablo Hernandez"
+				userName="pheralb"
+				/>
+
+				<TwitterCard
+				formatUserName={formatUserName}
+				isFollowing={true}
+				name="Elon Musk"
+				userName="elonmusk"
+				/>
 			</section>
 		</React.Fragment>
 	)

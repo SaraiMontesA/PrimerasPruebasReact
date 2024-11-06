@@ -2,8 +2,9 @@
 import PropTypes from 'prop-types';
 
 // Twitter card
-export function TwitterCard ({name, userName, isFollowing}) { 
+export function TwitterCard ({name, userName, isFollowing, formatUserName}) { 
 	const imageSrc = `https://unavatar.io/${userName}`
+	
 	return(
 	<article className='TwitterCard'>
 		<header className='TwitterCard-header'>
@@ -14,7 +15,7 @@ export function TwitterCard ({name, userName, isFollowing}) {
 			/>
 			<div className='TwitterCard-info'>
 				<strong className='TwitterCard-name'>{name}</strong>
-				<span className='TwitterCard-username'>{userName}</span>
+				<span className='TwitterCard-username'>{formatUserName(userName)}</span>
 			</div>
 		</header>
 
@@ -30,5 +31,5 @@ export function TwitterCard ({name, userName, isFollowing}) {
 // Validación de las propiedades
 TwitterCard.propTypes = {
 	name: PropTypes.string.isRequired,
-	username: PropTypes.string.isRequired,
+	userName: PropTypes.string.isRequired,
 };

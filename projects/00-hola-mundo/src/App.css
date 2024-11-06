@@ -7,6 +7,12 @@ body {
 	min-height: 100vh;
 }
 
+.App {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
 .TwitterCard {
 	display: flex;
 	align-items: center;

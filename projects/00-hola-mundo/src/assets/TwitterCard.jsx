@@ -4,17 +4,17 @@ import PropTypes from 'prop-types';
 // Twitter card
 export function TwitterCard ({name, username}) {
 	return(
-	<article>
-		<header>
-			<img src="https://unavatar.io/midudev" alt="Avatar" />
-			<div>
-				<strong>{name}</strong>
-				<span>{username}</span>
+	<article className='TwitterCard'>
+		<header className='TwitterCard-header'>
+			<img className='TwitterCard-avatar' src="https://unavatar.io/midudev" alt="Avatar" />
+			<div className='TwitterCard-datos'>
+				<strong className='TwitterCard-name'>{name}</strong>
+				<span className='TwitterCard-username'>{username}</span>
 			</div>
 		</header>
 
 		<aside>
-			<button>
+			<button className='TwitterCard-button'>
 				Seguir
 			</button>
 		</aside>

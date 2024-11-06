@@ -3,3 +3,35 @@ body {
 	font-family: system-ui;
 	display: grid;
 }
+
+.TwitterCard {
+	display: inline;
+}
+
+.TwitterCard-avatar {
+	display: inline-block;
+	min-width: 40px;
+	max-width: 50px;
+	border-radius: 30%;
+}
+
+.TwitterCard-datos {
+	display: inline-block;
+	/* background: #bbf; */
+}
+
+.TwitterCard-name {
+	display: flex;
+	color: aqua;
+	margin-top: 0px;
+}
+
+.TwitterCard-username {
+	display: flex;
+	color: #bfb;
+	margin-bottom: 0px;
+}
+
+.TwitterCard-button {
+	display: inline-block;
+}
